@@ -41,7 +41,7 @@ abstract class Floater //Do NOT modify the Floater class! Make changes in the Sp
     //wrap around screen    
     if(myCenterX >width)
     {     
-      myCenterX = 0;    
+      myCenterX = 50;    
     }    
     else if (myCenterX<0)
     {     
