@@ -25,6 +25,8 @@ public void keyTyped()
 {
   if (key=='q')
     ship.accelerate(30);
+   if (key=='w')
+     ship.accelerate(-3);
   if (key=='1')
   ship.turn(5);
   if (key=='2')
@@ -34,8 +36,8 @@ public void keyTyped()
     ship.setPointDirection((int)Math.random()*500);
     ship.setDirectionX(0);
    ship.setDirectionY(0);
-   ship.setX((int)Math.random()*500);
-    ship.setY((int)Math.random()*500);
+   ship.setX((int)(Math.random()*800));
+    ship.setY((int)(Math.random()*800));
    
   }
   
