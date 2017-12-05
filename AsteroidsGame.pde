@@ -1,5 +1,6 @@
 Spaceship ship;
 Star[] stars = new Star[300];
+Asteroid[] rocks = new Asteroid[15];
 
 public void setup() 
 {
@@ -7,6 +8,10 @@ public void setup()
   ship = new Spaceship();
   for (int i = 0; i < stars.length; i++) {
     stars[i] = new Star();
+  }
+  for(int i = 0; i < rocks.length; i++)
+  {
+    rocks[i] = new Asteroid();
   }
 }
 
@@ -17,6 +22,12 @@ public void draw()
   for (int i = 0; i < stars.length; i++) {
     stars[i].show();
   }
+    for(int x = 0; x < rocks.length; x++)
+  {
+    rocks[x].move();
+    rocks[x].show();
+  }
+  
   ship.move();
   ship.show();
 }
