@@ -1,6 +1,6 @@
 Spaceship ship;
 Star[] stars = new Star[300];
-Asteroid[] rocks = new Asteroid[15];
+ArrayList <Asteroids> bob= new ArrayList <Asteroids>();
 
 public void setup() 
 {
@@ -9,9 +9,9 @@ public void setup()
   for (int i = 0; i < stars.length; i++) {
     stars[i] = new Star();
   }
-  for(int i = 0; i < rocks.length; i++)
+  for(int i = 0; i< 50; i++)
   {
-    rocks[i] = new Asteroid();
+    bob.add(new Asteroid()) ;
   }
 }
 
